@@ -67,7 +67,7 @@ Message handler.
 */
 client.on('message', message => {
     try {
-        if (message.author == client.user.id) {
+        if (message.author.id == client.user.id) {
             var channel = message.channel;
             var args = message.content.split(" ");
             //purge
