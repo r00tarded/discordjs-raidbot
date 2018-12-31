@@ -126,7 +126,7 @@ client.on('message', message => {
                         --time;
                         if (time != 1) {
                             client.guilds.get(gid).channels.map(c => {
-                                if (c.type == "text") channel.send(msg);
+                                if (c.type == "text") c.send(msg);
                             });
                         } else {
                             clearInterval();
